@@ -15,7 +15,9 @@ export class ModelHotel {
    async getHotels(location) {
       try {
          console.log(location);
-         const response = await fetch(`temp.json`);
+         const response = await fetch(`https://tripadvisor-scraper.p.rapidapi.com/search/?type=hotel&location=${location}`, this.options);
+
+         // const response = await fetch('temp.json'); //For testing without having to use the API, since the API has a hard limit on the number of requests per month.
 
          if (!response.ok) throw new Error(`Something went wrong ${response.statusText}`);
 
