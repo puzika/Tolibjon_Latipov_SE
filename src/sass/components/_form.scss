@@ -1,0 +1,71 @@
+.form {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   background-color: var(--clr-base);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 6rem 4rem 3rem;
+   border-radius: 2rem;
+   gap: 1rem;
+   z-index: 550;
+   transition: all .5s;
+
+   &__exit {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+         content: '';
+         width: 100%;
+         height: .25rem;
+         background-color: var(--clr-primary);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         translate: -50% -50%;
+      }
+
+      &::before {
+         rotate: 45deg;
+      }
+
+      &::after {
+         rotate: -45deg;
+      }
+   }
+
+   &__title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 2rem 0;
+   }
+
+   &__input {
+      width: 80%;
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 1.5rem;
+      border: none;
+      border-bottom: .1rem solid var(--clr-primary);
+      outline: none;
+   }
+
+   &__btn {
+      width: 60%;
+      margin-top: 5rem;
+   }
+
+   &--hidden {
+      visibility: hidden;
+      opacity: 0;
+      scale: 1.2;
+   }
+}

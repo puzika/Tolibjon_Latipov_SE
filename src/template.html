@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="./assets/flügel.png"
+         type="image/x-icon"
+      />
+      <link rel="stylesheet" href="style.css">
+      <script type="module" defer src="./index.js"></script>
+      <title>Reiseführer</title>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="navigation">
+            <div class="logo">
+               <img src="./assets/flügel.png" alt="wings" class="logo__img" />
+               <p class="logo__title">Reiseführer</p>
+            </div>
+            
+            <form action="" class="search">
+               <label class="search__label search__label--search">
+                  <span>Hotels</span>
+                  <input type="text" name="" id="" required placeholder="Search (e.g. Berlin)..." class="search__input search__input--location" />
+               </label>
+               <label class="search__label search__label--rating">
+                  <span>Rating</span>
+                  <input type="number" step=".5" name="" id="" required min="0" max="5" value="5" class="search__input search__input--rating">
+               </label>
+               <button type="submit" style="display: none;"></button>
+            </form>
+            
+            <div class="cta">
+               <button class="btn btn--signup">Sign up</button>
+               <button class="btn btn--signin">Sign in</button>
+               <button class="btn btn--signout btn--hidden">Sign out</button>
+            </div>
+         </nav>
+
+         <div class="results results--hidden"></div>
+
+         <div class="title">
+            <div class="title__content">
+               <img src="./assets/flügel.png" alt="wings" class="title__img">
+               <h1 class="title__heading">Reiseführer</h1>
+               <p class="title__slogan">Your Passport to Adventure</p>
+            </div>
+         </div>
+      </header>
+
+      <div class="overlay overlay--hidden"></div>
+
+      <form action="" class="form form--signup form--hidden">
+         <span class="form__exit"></span>
+         <h4 class="form__title">Create your accout</h4>
+         <input type="text" required placeholder="Name" class="form__input form__input--name">
+         <input type="text" required placeholder="E-mail" class="form__input form__input--email-up">
+         <input type="text" required placeholder="Password" minlength="6" maxlength="15" class="form__input form__input--password-up">
+         <button class="btn form__btn form__btn--signup">Sign up</button>
+      </form>
+
+      <form action="" class="form form--signin form--hidden">
+         <span class="form__exit"></span>
+         <h4 class="form__title">Sign in</h4>
+         <input type="text" required placeholder="E-mail" class="form__input form__input--email-in">
+         <input type="text" required placeholder="Password" minlength="6" maxlength="15" class="form__input form__input--password-in">
+         <button class="btn form__btn form__btn--signup">Sign up</button>
+      </form>
+
+      <section class="section section--cards">
+         <h2 class="section__heading">Hotels that suit YOUR needs</h2>
+
+         <div class="cards"></div>
+      </section>
+
+      <footer class="footer">
+         <div class="social">
+            <a href="#" class="social__link social__link--telegram">
+               <img src="./assets/telegram.png" alt="telegram" class="social__img">
+            </a>
+
+            <a href="#" class="social__link social__link--linkedin">
+               <img src="./assets/linkedin.png" alt="linkedin" class="social__img">
+            </a>
+
+            <a href="#" class="social__link social__link--whatsapp">
+               <img src="./assets/whatsapp.png" alt="whatsapp" class="social__img">
+            </a>
+
+            <a href="#" class="social__link social__link--twitter">
+               <img src="./assets/twitter.png" alt="twitter" class="social__img">
+            </a>
+         </div>
+
+         <p class="footer__copyright">&copy;2024 Reiseführer. All rights reserved.</p>
+      </footer>
+   </body>
+</html>

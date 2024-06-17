@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+//ABSTRACTS
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+//BASE
+
+@import './base/reset';
+
+//LAYOUT
+
+@import './layout/body';
+@import './layout/header';
+@import './layout/title';
+@import './layout/section';
+@import './layout/footer';
+
+//COMPONENTS
+
+@import './components/navigation';
+@import './components/logo';
+@import './components/search';
+@import './components/cta';
+@import './components/btn';
+@import './components/cards';
+@import './components/card';
+@import './components/social';
+@import './components/form';
+@import './components/overlay';
+@import './components/results';
+@import './components/result';

@@ -1,0 +1,33 @@
+.social {
+   width: 40%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15rem;
+
+   &__link {
+      width: 8rem;
+      background-color: black;
+      border-radius: 100%;
+      transition: scale .2s;
+      cursor: pointer;
+
+      &--linkedin {
+         background-color: var(--clr-base);
+      }
+
+      &:link,
+      &:visited {
+         text-decoration: none;
+      }
+
+      &:hover {
+         scale: 1.1;
+      }
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+   }
+}

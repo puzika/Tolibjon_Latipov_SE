@@ -1,0 +1,19 @@
+{
+  "name": "pieceofcrapv2.0",
+  "version": "1.0.0",
+  "description": "Reiseführer",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass src/sass/main.scss src/style.css -w",
+    "compile:scss": "sass src/sass/main.scss src/style.css"
+  },
+  "author": "Tolibjon Latipov",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  },
+  "dependencies": {
+    "firebase": "^10.12.2"
+  }
+}

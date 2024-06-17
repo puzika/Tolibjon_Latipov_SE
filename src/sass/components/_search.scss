@@ -1,0 +1,43 @@
+.search {
+   display: flex;
+   justify-content: center;
+   width: 50%;
+   gap: 4rem;
+
+   &__label {
+      & span {
+         font-size: 1.8rem;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      &--search {
+         width: 60%;
+      }
+
+      &--rating {
+         flex: 1;
+      }
+   }
+
+   &__input {
+      display: block;
+      width: 100%;
+      background-color: var(--clr-primary-ltr);
+      border: none;
+      border-radius: 10rem;
+      font-size: inherit;
+      padding: .8rem 1.5rem;
+
+      &:focus {
+         outline: .2rem solid var(--clr-primary-lt);
+      }
+
+      &--rating {
+         text-align: center;
+      }
+   }
+}

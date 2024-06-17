@@ -1,0 +1,32 @@
+.results {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   translate: 0 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+   background-color: var(--clr-base);
+   padding: 15rem 5rem 10rem;
+   box-shadow: 0 0 2rem .5rem var(--clr-primary-lt);
+   transition: translate 1s;
+   z-index: 30;
+   overflow-y: scroll;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+
+   &--hidden {
+      translate: 0 -100%;
+   }
+
+   &__exit {
+      position: absolute;
+      top: 15rem;
+      right: 5rem;
+   }
+}
